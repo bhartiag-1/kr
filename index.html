@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Krishna Collection | Quality Promise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Categories</a>
+    </div>
+    
+    <div class="logo-area">
+        <img src="logo.png" class="logo" alt="Krishna Collection">
+    </div>
+
+    <div class="nav-links">
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="cart.html" class="cart-link">
+            <span id="cart-count">0</span> 🛒 Cart
+        </a>
+    </div>
+</nav>
+
+<div class="search-container">
+    <input type="text" id="search" placeholder="Search products...">
+</div>
+
+<div class="promo-banner">
+    <img src="banner.png" alt="Shop Our New Arrivals - Limited Time Offer">
+</div>
+
+<div class="filters">
+    <button class="filter-btn active" onclick="filterCategory('All')">All</button>
+    <button class="filter-btn" onclick="filterCategory('Jewellery')">Jewellery</button>
+    <button class="filter-btn" onclick="filterCategory('Household')">Household</button>
+    <button class="filter-btn" onclick="filterCategory('Clothing')">Clothing</button>
+</div>
+
+<div class="products" id="product-list"></div>
+
+<div id="image-modal" class="modal" onclick="closeImage()">
+    <span class="close-modal">&times;</span>
+    <div class="modal-wrapper">
+        <img class="modal-content" id="full-img">
+        <div id="caption"></div>
+    </div>
+</div>
+
+<a href="https://wa.me/917983348682" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
